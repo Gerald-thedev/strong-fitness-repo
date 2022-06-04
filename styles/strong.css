@@ -12,7 +12,6 @@ body {
 
 #container {
     box-sizing: border-box;
-    border: 2px solid black;
     background: red;
     max-width: 100%;
     min-height: 100vh; 
@@ -25,20 +24,21 @@ body {
     "header"
     "fitness"
     "nutrition"
-    "trainer"
-    "gymwears"
+    "training"
+    "gymclasses"
     "footer";
 }
 
 header {
-    /* border: 1px solid yellow; */
     max-width: 100%;
     width: auto;
     min-height: 6rem;
     grid-area: header;
+    background: crimson; 
+}
+
+.navigation {
     background: white;
-    
-    
 }
 
 h1 {
@@ -50,6 +50,7 @@ h1 {
 nav ul li a {
     text-decoration: none;
     font-size: 0.6rem;
+    color: black;
 }
 
 nav ul {
@@ -70,12 +71,10 @@ nav ul li {
 #fitness {
     grid-area: fitness;
     background: burlywood;
-    margin-top: -0.1rem;
-    
+    margin-top: -0.1rem; 
 }
 
 .fitness-img {
-    /* border: 1px solid black; */
     margin: 0.5rem auto;
     padding-top: 0.02rem;
 }
@@ -110,7 +109,6 @@ nav ul li {
 .nutrition-img-text {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     margin-top: 1rem;
     align-content: space-around;
 }
@@ -133,13 +131,41 @@ nav ul li {
 
 
 
-#trainer {
-    grid-area: trainer;
+#training {
+    width: 100%;
+    height: auto;
+    grid-area: training;
     background: green;
+    background-image: url("/images/gymguy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#gymwears {
-    grid-area: gymwears;
+#training h2 {
+    margin-top: -0.02rem;
+    color: white;
+}
+
+.trainer-content {
+    max-width: 100%;
+    width: 12rem;
+    margin: 0 auto;
+    height: 12rem;
+    background-color: white;
+    opacity: 0.8;
+    padding: 0.5rem 0.8rem;
+}
+
+#gymclasses {
+    grid-area: gymclasses;
     background: crimson;
+}
+
+.gymclass-items img {
+    display: block;
+    max-width: 100%;
+    width: 18.5rem;
+    height: auto;
+    margin: 1rem auto;
 }
 
