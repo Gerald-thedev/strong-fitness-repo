@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#container {
+    box-sizing: border-box;
+    border: 2px solid black;
+    background: red;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: grid;
+    row-gap: 0.2rem;
+    grid-template-rows: repeat(auto-fit, minmax(6rem, auto));
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "fitness"
+    "nutrition"
+    "trainer"
+    "gymwears"
+    "footer";
+}
+
+header {
+    border: 1px solid yellow;
+    max-width: 100%;
+    width: auto;
+    max-height: 6rem;
+    grid-area: header;
+    background: white;
+    
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.6rem;
+}
+
+nav ul {
+    border: 1px solid black;
+    margin-top: -0.6rem;
+    box-shadow: 2px 0 5px 2px black;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 1.5rem;
+}
+
+
+#fitness {
+    grid-area: fitness;
+    background: burlywood;
+    
+}
+
+#nutrition {
+    grid-area: nutrition;
+    background: blue;
+}
+
+
+
+#trainer {
+    grid-area: trainer;
+    background: green;
+}
+
+#gymwears {
+    grid-area: gymwears;
+    background: crimson;
+}
+
