@@ -74,7 +74,7 @@ nav ul li {
 }
 
 
-#fitness {
+#home {
     grid-area: fitness;
     background-image: url("/images/gymguy1.jpg");
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ nav ul li {
     border: 2px solid white;
     width: 50%;
     margin: 1.5rem auto;
-    padding: 0.4rem 0;
+    padding: 0.6rem 0;
     text-align: center;
     cursor: pointer;
 }
@@ -237,5 +237,14 @@ nav ul li {
     width: 18.5rem;
     height: auto;
     margin: 1rem auto;
+}
+
+.back-to-top {
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    width: 5rem;
+    position: relative;
+    left: 15rem;
+
 }
 
