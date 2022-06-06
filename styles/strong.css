@@ -5,21 +5,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: white;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 #container {
     position: relative;
     box-sizing: border-box;
-    background: red;
+    background: white;
     max-width: 100%;
     min-height: 100vh; 
     overflow-x: hidden;
     display: grid;
-    row-gap: 2rem;
-    grid-template-rows: repeat(auto-fit, minmax(6rem, auto));
+    grid-template-rows: repeat(auto-fit, minmax(5rem, auto));
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -31,7 +29,7 @@ body {
 }
 
 header {
-    margin-top: -1.1rem;
+    margin-top: -1.15rem;
     max-width: 100%;
     width: auto;
     height: 3.8rem;
@@ -49,28 +47,36 @@ header {
 h1 {
     text-align: center;
     font-size: 1.6rem;
-    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-nav ul li a {
+.navigation ul li a {
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color: black;
 }
 
-nav ul {
+.navigation ul {
     border: 1px solid black;
     margin-top: -0.6rem;
     box-shadow: 2px 0 5px 2px black;
     width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav ul li {
+.navigation ul li {
     list-style-type: none;
-    padding-right: 1.5rem;
+    margin-right: 2rem;
+    padding: 0 0.1rem;
+    font-weight: bold;
+    padding: 0 0.4rem;
+    
+}
+
+.navigation ul li:hover {
+    background-color: crimson;
 }
 
 
@@ -86,8 +92,7 @@ nav ul li {
 }
 
 .fitness-container {
-    margin-top: 3.5rem;
-
+    margin-top: 4.2rem;
 }
 
 .fitness-container h3 {
@@ -104,7 +109,6 @@ nav ul li {
 
 .fitness-line {
     background-color: white!important;
-    
 }
 
 .fitness-img {
@@ -150,12 +154,10 @@ nav ul li {
 #nutrition {
     grid-area: nutrition;
     background: orange;
-    
 }
 
 .nutrition-container {
-    margin-top: 3.5rem;
-
+    margin-top: 4.2rem;
 }
 
 .nutrition-img-text {
@@ -181,8 +183,6 @@ nav ul li {
     padding-left: 1rem;
 }
 
-
-
 #training {
     width: 100%;
     height: auto;
@@ -194,7 +194,7 @@ nav ul li {
 }
 
 .training-container {
-    margin-top: 3.5rem;
+    margin-top: 4.2rem;
 }
 
 #training h2 {
@@ -223,12 +223,11 @@ nav ul li {
 }
 
 .gymclass-container {
-    margin-top: 3.5rem;
+    margin-top: 4.2rem;
 }
 
 .gymclass-container p {
     color: white;
-
 }
 
 .gymclass-items img {
@@ -240,11 +239,51 @@ nav ul li {
 }
 
 .back-to-top {
-    /* border: 2px solid black; */
-    border-radius: 50%;
-    width: 5rem;
-    position: relative;
-    left: 15rem;
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+}
 
+.footer-lists ul li {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.footer-lists ul li a {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: burlywood;
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+    min-height: fit-content!important;
+}
+
+#footer h2 {
+    text-align: center;
+}
+
+#footer p {
+    font-size: 1.2rem;
+}
+
+#footer h3 {
+    margin-top: 1rem;
+}
+
+#footer .line {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footer .social-links {
+    margin: 1rem auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
 }
 
